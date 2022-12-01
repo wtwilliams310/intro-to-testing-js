@@ -4,7 +4,10 @@ const helloWorld = function () {
 }
 
 function sayHello(input) {
-    return (typeof input === "string") ? `Hello, ${input}!` : `Hello, Jane!`;
+    if(typeof input === 'boolean') {
+        return `Hello, World!`
+    }
+    return `Hello, ${input}!`;
 }
 
-//make sure input is a string
+
