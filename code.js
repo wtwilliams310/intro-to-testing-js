@@ -13,8 +13,14 @@ function sayHello(input) {
 function isFive(input) {
     if(input == 5) {
         return true;
-    } else {
-        return 'boolean';
-    }
+    } return false;
+}
+
+function isEven(input) {
+    if(typeof input === 'boolean') {
+        return false;
+    } else if(input % 2 === 0) {
+        return true;
+    } return false;
 }
 
